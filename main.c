@@ -3,6 +3,44 @@
 #include <math.h>
 #include <time.h>
 
+// function untuk mengimplementasikan permainan
+int game(char you, char computer)
+{
+	// Jika pengguna dan komputer
+	// telah memilih hal yang sama
+	if (you == computer)
+		return -1;
+
+	// Jika pilihan pengguna adalah batu dan
+	// pilihan komputer adalah kertas
+	if (you == 's' && computer == 'p')
+		return 0;
+
+	// Jika pilihan pengguna adalah kertas dan
+	// pilihan komputer adalah batu
+	else if (you == 'p' && computer == 's') return 1;
+
+	// Jika pilihan pengguna adalah batu dan
+	// pilihan komputer adalah gunting
+	if (you == 's' && computer == 'z')
+		return 1;
+
+	// Jika pilihan pengguna adalah gunting dan
+	// pilihan komputer adalah batu
+	else if (you == 'z' && computer == 's')
+		return 0;
+
+	// Jika pilihan pengguna adalah kertas dan
+	// pilihan komputer adalah gunting
+	if (you == 'p' && computer == 'z')
+		return 0;
+
+	// Jika pilihan pengguna adalah gunting dan
+	// pilihan komputer adalah kertas
+	else if (you == 'z' && computer == 'p')
+		return 1;
+}
+
 int main()
 {
     	// Menyimpan nomor acak
