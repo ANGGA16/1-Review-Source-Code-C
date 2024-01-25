@@ -19,3 +19,5 @@ Aplikasi yang dibuat memiliki fitur dimana kita dapat memainkan game tersebut, d
 9. return
 10. Assignment Operator
 11. Arithmetic Operators
+12. Comparison Operators
+13. Logical Operators
